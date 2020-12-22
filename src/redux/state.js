@@ -4,9 +4,6 @@ let state = {
     profilePage: {
         posts: [
             {id: 1, likesCount: 100, message: 'My first post!'},
-            {id: 2, likesCount: 200, message: 'My second post!'},
-            {id: 3, likesCount: 300, message: 'My third post!'},
-            {id: 4, likesCount: 400, message: 'My fourth post!'},
         ],
         newPostText: 'Hello Roma!',
     },
@@ -20,12 +17,9 @@ let state = {
             {id: 6, name: 'Gideon', url: 'https://github.com/Ivan-F-Dev/imgs/blob/main/Moff.jpg?raw=true'},
         ],
         messages: [
-            {id: 1, message: 'message1'},
-            {id: 2, message: 'message2'},
-            {id: 3, message: 'message3'},
-            {id: 4, message: 'message4'},
-            {id: 5, message: 'message5'},
+
         ],
+        newMessageText: "",
     },
     navbarPage: {
         friends: [
@@ -50,6 +44,21 @@ export let  addPost = () => {
 
 export let  updateNewPostText = (newText) => {
     state.profilePage.newPostText = newText;
+    rerenderEntireTree(state);
+};
+
+export let  addMessage = () => {
+    let newMessage = {
+        id: 2,
+        message: state.dialogsPage.newMessageText,
+    };
+    state.dialogsPage.messages.push(newMessage);
+    state.dialogsPage.newMessageText = '';
+    rerenderEntireTree(state);
+};
+
+export let  updateNewMessageText = (newText) => {
+    state.dialogsPage.newMessageText = newText;
     rerenderEntireTree(state);
 };
 
