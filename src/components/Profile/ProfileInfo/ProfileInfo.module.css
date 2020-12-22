@@ -1,0 +1,38 @@
+.person {
+
+    display: flex;
+    padding: 20px;
+}
+
+.personImgWrap {
+    width: 24%;
+    line-height: 0;
+}
+
+.personImg {
+    border-radius: 5%;
+    margin-right: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.personData {
+    margin-left: 20px;
+}
+
+.dataName {
+    font-weight: 700;
+}
+
+.dataOther {
+    margin-top: 20px;
+    display: flex;
+}
+
+.points {
+    margin-right: 20px;
+}
+
+.values {
+
+}

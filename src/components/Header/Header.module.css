@@ -1,0 +1,12 @@
+/*Header*/
+.header {
+    grid-area: h;
+    display: flex;
+    align-items: center;
+    background-color: brown;
+  }
+  
+  .header img {
+    margin-left: 8px;
+    height: 90%;
+  }

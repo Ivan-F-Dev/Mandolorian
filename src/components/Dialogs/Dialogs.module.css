@@ -1,0 +1,30 @@
+/*Dialogs*/
+.dialogs {
+    display: grid;
+    grid-template-columns: 4fr 10fr;
+}
+
+.write {
+    padding: 5px 0px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textarea {
+    border-radius: 8px;
+    border: 2px solid brown;
+    height: 100%;
+    width: 80%;
+}
+
+.button {
+    border-radius: 8px;
+    height: 100%;
+    width: 18%;
+    background-color: brown;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
